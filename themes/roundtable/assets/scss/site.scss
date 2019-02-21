@@ -1,5 +1,42 @@
+@import 'variables';
+@import 'mixins';
 @import 'normalize';
 
-.container {
+.grid-container {
+  min-height: 100vh;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: $header_height auto $footer_height;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+
+  @include tablet_up {
+    grid-template-areas:
+      "header header header header"
+      "sidebar main main main"
+      "footer footer footer footer";
+  }
+}
+
+.header-grid {
+  grid-area: header;
+}
+
+.sidebar-grid {
+  display: none;
+
+  @include tablet_up {
+    display: block;
+    grid-area: sidebar;
+  }
+}
+
+.footer-grid {
+  grid-area: footer;
+}
+
+.main-grid {
+  grid-area: main;
 }

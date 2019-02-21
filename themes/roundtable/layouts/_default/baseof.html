@@ -7,7 +7,10 @@
     <![endif]-->
     <div class="grid-container">
       {{- partial "header.html" . -}}
-      <main>
+      <aside class="sidebar-grid">
+        <h1>this is the sidebar</h1>
+      </aside>
+      <main class="main-grid">
         {{- block "main" . }}{{- end }}
       </main>
       {{- partial "footer.html" . -}}
