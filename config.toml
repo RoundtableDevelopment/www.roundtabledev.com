@@ -1,0 +1,6 @@
+baseURL = "https://www.roundtabledev.com/"
+languageCode = "en-us"
+title = "Roundtable Development"
+theme = "Roundtable"
+googleAnalytics = "UA-XXXXXX-X"
+
