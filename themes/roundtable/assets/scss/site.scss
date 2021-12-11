@@ -2,6 +2,12 @@
 @import 'mixins';
 @import 'normalize';
 
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
 .grid-container {
   min-height: 100vh;
   display: grid;
@@ -15,7 +21,7 @@
   @include tablet_up {
     grid-template-areas:
       "header header header header"
-      "sidebar main main main"
+      "main main main sidebar"
       "footer footer footer footer";
   }
 }
@@ -40,3 +46,47 @@
 .main-grid {
   grid-area: main;
 }
+
+
+// Navbar
+// ======
+
+.nav-container {
+  width: 100%;
+}
+
+.main-nav {
+  max-width: $desktop-lg;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+@include tablet_or_smaller {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .right-menu {
+    display: none;
+  }
+
+  #nav-toggle:checked ~ .right-menu {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+

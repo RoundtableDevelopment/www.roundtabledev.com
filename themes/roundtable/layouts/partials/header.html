@@ -1,3 +1,28 @@
 <header class="header-grid">
-  <h1>This is the header</h1>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="hamburger-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </label>
+      <div>
+        <img src="http://placehold.it/80x80" />
+      </div>
+      <div class="right-menu">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+            <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+              <a href="{{ .URL }}">
+                <span>{{ .Name }}</span>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
