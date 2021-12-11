@@ -1,6 +1,19 @@
 baseURL = "https://www.roundtabledev.com/"
 languageCode = "en-us"
 title = "Roundtable Development"
-theme = "Roundtable"
+theme = "PaperMod"
 googleAnalytics = "UA-XXXXXX-X"
+
+
+[params.homeInfoParams]
+Title = "Hi there, Bob"
+Content = """
+Welcome to my blog.
+
+It is a blog.
+"""
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/"
 
