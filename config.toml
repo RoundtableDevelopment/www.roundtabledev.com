@@ -4,9 +4,19 @@ title = "Roundtable Development"
 theme = "PaperMod"
 googleAnalytics = "UA-XXXXXX-X"
 
+[params.label]
+text ="Roundtable Development"
+
+[params.profileMode]
+enabled = false
+title = "Roundtable Development"
+imageUrl = "/images/logo.png"
+imageTitle = "Roundtable Dev"
+imageWidth = 300
+imageHeight = 230
 
 [params.homeInfoParams]
-Title = "Hi there, Bob"
+Title = "Hi there"
 Content = """
 Welcome to my blog.
 
