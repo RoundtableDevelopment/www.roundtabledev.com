@@ -1,0 +1,18 @@
+{{- with $.Site.Params.homeInfoParams }}
+{{ $thing := (resources.Get "images/logo_horizontal.png") }}
+{{ $processed_image := $thing.Resize "300x" }}
+<article class="first-entry home-info">
+  <div class="logo-container" style="padding:2em 0">
+    <img src="{{$processed_image.RelPermalink | safeURL}}">
+  </div>
+  <header class="entry-header">
+    <h1>{{ .Title | markdownify }}</h1>
+  </header>
+  <section class="entry-content">
+    <p>{{ .Content | markdownify }}</p>
+  </section>
+  <footer class="entry-footer">
+    {{ partial "social_icons.html" $.Site.Params.socialIcons }}
+  </footer>
+</article>
+{{- end -}}
