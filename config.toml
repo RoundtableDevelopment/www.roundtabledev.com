@@ -2,30 +2,21 @@ baseURL = "https://www.roundtabledev.com/"
 languageCode = "en-us"
 title = "Roundtable Development"
 theme = "PaperMod"
-googleAnalytics = "UA-XXXXXX-X"
+copyright = "&copy; 2021 Roundtable Development, LLC"
 
 [params.label]
 text ="Roundtable Development"
 
-[params.profileMode]
-enabled = false
-title = "Roundtable Development"
-imageUrl = "/images/logo.png"
-imageTitle = "Roundtable Dev"
-imageWidth = 300
-imageHeight = 230
-
 [params.homeInfoParams]
-Title = "Hi there"
+Title = "We build good things with code"
 Content = """
-Welcome to my blog.
-
-It is a blog.
+Custom software development that you're actually excited to
+keep doing.
 """
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/"
+url = "https://github.com/roundtableDevelopment"
 
 [deployment]
 
