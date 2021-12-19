@@ -23,6 +23,7 @@ url = "https://github.com/roundtableDevelopment"
 [[deployment.targets]]
 name="main-deploy"
 URL="s3://www.roundtabledev.com?region=us-east-1"
+cloudFrontDistributionID = "E13KRC9PPYCBL"
 
 [[deployment.matchers]]
 # Cache static assets for 1 year.
