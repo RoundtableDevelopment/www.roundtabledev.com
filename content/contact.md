@@ -5,6 +5,6 @@ menu: "main"
 ---
 
 
-Feel free to reach out to us with any inquiries or comments at _contact_ at _roundtabledev.com_
+Feel free to reach out to us with any inquiries or comments at contact@roundtabledev.com
 
 

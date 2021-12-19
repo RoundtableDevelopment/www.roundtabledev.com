@@ -11,4 +11,16 @@ Custom software can grow like a weed.  Our focus is on finding lean and targeted
 first what is needed to solve the problem.
 
 ### Who we are
+
+Roundtable is operated by Daniel McBrayer, a Birmingham-based web developer with nearly 10 years of experience building production level web applications.
+
 ### What we do
+
+We offer full-stack software development services including:
+- Ideation and design
+- Market validation
+- System architecture
+- Application Code
+- Deployment configuration
+- Performance monitoring
+
